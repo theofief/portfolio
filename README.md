@@ -47,12 +47,14 @@ The website is fully **responsive**, optimized for **desktop & mobile**, and bui
 ---
 
 ## 📁 Project Structure
+```bash
 📦 portfolio/
 ├── 📁 img/                # All images (hero, projects, visuals)
 ├── 📄 index.html          # Main HTML file
 ├── 🎨 style.css           # Main CSS styles
 ├── ⚙️ script.js           # Animations & interactions
 └── 📘 README.md           # Project documentation
+```
 
 ---
 

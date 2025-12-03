@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Théo Fief — Portfolio</title>
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg custom-navbar d-flex align-items-center px-3">
+  <div class="container-fluid">
+    <a class="navbar-brand text-dark" href="#home"><h1 class="m-0 fw-bold">Théo Fief</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link text-dark" href="#home">Accueil</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#about">À propos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#skills">Compétences</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#projects">Projets</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO / ACCUEIL -->
+<section id="home" class="hero-section scroll-animate">
+  <div class="hero-text">
+    <h1 class="fw-bold">Théo Fief</h1>
+    <h2>Bachelor 2 Informatique — Héxagone Versailles • Auto-entrepreneur dans l’import & revente de produits de luxe de seconde main.</h2>
+    <div class="mt-3">
+      <a href="#projects" class="btn btn-dark btn-sm me-2">Voir mes projets</a>
+      <a href="#contact" class="btn btn-outline-dark btn-sm">Me contacter</a>
+    </div>
+  </div>
+
+  <div class="hero-img-wrapper">
+    <img src="img/top.png" class="hero-img" alt="Photo Théo (placeholder)">
+  </div>
+</section>
+
+<!-- MEME SECTION (cards + image) -->
+<section class="meme-section scroll-animate" aria-label="Aperçu activités">
+  <div class="cards-container" aria-hidden="false">
+    <div class="card">Micro-entreprise — Import & revente luxe</div>
+    <div class="card">Création de sites & stockage en ligne</div>
+    <div class="card">Projets hardware & jeux (ESP32)</div>
+    <div class="card">Maintenance informatique & bug bounty</div>
+  </div>
+
+  <img src="img/middle.png" class="meme-img" alt="Illustration (placeholder)">
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section bg-transparent scroll-animate">
+  <div class="container">
+    <h2>À propos</h2>
+    <div class="profile-grid">
+      <div class="profile-card slide-up">
+        <h3>Profil</h3>
+        <p class="muted">
+          Je m’appelle <strong>Théo Fief</strong>, actuellement en <strong>Bachelor 2 en informatique</strong> à Héxagone Versailles. Je suis entrepreneur (micro-entreprise depuis septembre 2025) spécialisé dans l’import et la revente de produits de luxe de seconde main. J’aime concevoir des solutions web locales, tester de nouvelles IA génératives et travailler sur des prototypes intégrant hardware & software.
+        </p>
+
+        <h5 class="mt-3">Coordonnées</h5>
+        <ul class="list-unstyled mb-0 muted">
+          <li><strong>Localisation :</strong> Houdan, France</li>
+          <li><strong>E-mail :</strong> theo.fief@ecole-hexagone.com</li>
+          <li><strong>LinkedIn :</strong> Théo Fief</li>
+          <li><strong>Permis :</strong> Titulaire du permis B (véhiculé)</li>
+        </ul>
+      </div>
+
+      <div class="profile-card slide-up delay-1">
+        <h3>Parcours & formations</h3>
+        <p class="muted mb-1"><strong>Formation actuelle :</strong> Bachelor 2 Informatique — Héxagone Versailles (2025-2026)</p>
+        <p class="muted mb-1"><strong>Diplômes :</strong> Bac (spécialités Maths & NSI) — Institut Saint Pierre Saint Paul</p>
+        <p class="muted mb-1"><strong>Certifications :</strong> Certification INSIDE LVMH — formation au secteur du luxe (2025)</p>
+
+        <h5 class="mt-2">Expériences</h5>
+        <ul class="muted">
+          <li><strong>Micro-entrepreneur</strong> — Import / achat-revente de produits de luxe de seconde main (depuis sept. 2025)</li>
+          <li><strong>Stagiaire dev</strong> — E-Swin (Juillet-Août 2025) — outils web internes</li>
+          <li><strong>Vendeur</strong> — Épicerie fine (gestion et vente) — Juin-Juillet 2023 → contrat étudiant depuis oct. 2024</li>
+          <li><strong>Stage maintenance</strong> — ARM, Chaussée d’Ivry (2021)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section scroll-animate">
+  <div class="container">
+    <h2>Compétences</h2>
+
+    <div class="skills-grid">
+      <div class="skill-badge hover-scale">
+        <i class="bi bi-code-slash fs-4"></i>
+        <div>
+          <div><strong>Développement web</strong></div>
+          <small class="muted">HTML, CSS, JS, Flask — création de sites & outils internes</small>
+        </div>
+      </div>
+
+      <div class="skill-badge hover-scale">
+        <i class="bi bi-cpu fs-4"></i>
+        <div>
+          <div><strong>IA & ML (POC)</strong></div>
+          <small class="muted">Tests d'IA génératives, POC locaux sur Mac M3 Pro</small>
+        </div>
+      </div>
+
+      <div class="skill-badge hover-scale">
+        <i class="bi bi-gear-wide-connected fs-4"></i>
+        <div>
+          <div><strong>Maintenance & sécurité</strong></div>
+          <small class="muted">Maintenance informatique, scripts, bug bounty (notions)</small>
+        </div>
+      </div>
+
+      <div class="skill-badge hover-scale">
+        <i class="bi bi-shop-window fs-4"></i>
+        <div>
+          <div><strong>Entrepreneuriat & commerce</strong></div>
+          <small class="muted">Sourcing, import, logistique & drops</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-4 slide-up delay-1">
+      <h5>Langues</h5>
+      <p class="muted mb-1">Anglais : B2-C1 — Espagnol : B1 — Japonais : pré A1</p>
+
+      <h5 class="mt-3">Outils</h5>
+      <p class="muted">Python, LiveCode, HTML/CSS/JS, notions de SQL, C, Bash, Symfony, Canva, Premiere Pro, Illustrator, Office</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section projects-section scroll-animate" id="projets">
+  <h2>Mes Projets</h2>
+
+  <div class="projects-container">
+    
+    <!-- Card 1 -->
+    <div class="profile-card project-card hover-scale slide-up">
+      <img src="img/projet1.png" alt="Projet 1" class="project-img">
+      <h3>Import & Vente Luxe</h3>
+      <p>
+        Gestion complète d’une micro-entreprise spécialisée dans 
+        l’import, l’achat et la revente de pièces de luxe de seconde main.
+      </p>
+      <a href="https://bento.me/theofief" class="project-btn">En voir plus</a>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="profile-card project-card hover-scale slide-up delay-1">
+      <img src="img/projet2.png" alt="Projet 2" class="project-img">
+      <h3>Dév d’outils Web</h3>
+      <p>
+        Développement d’applications web internes durant mon stage à E-Swin 
+        (automatisation, interface interne, scripts).
+      </p>
+      <a href="https://github.com/theofief/" class="project-btn">En voir plus</a>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="profile-card project-card hover-scale slide-up delay-2">
+      <img src="img/projet3.png" alt="Projet 3" class="project-img">
+      <h3>Créations & Sites Web</h3>
+      <p>
+        Création de sites web personnels dont un espace de stockage en ligne, 
+        et divers projets front-end / full-stack.
+      </p>
+      <a href="https://github.com/theofief/" class="project-btn">En voir plus</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section scroll-animate">
+  <div class="container">
+    <h2>Contact</h2>
+    <p class="muted">Remplis le formulaire ci-dessous — tous les champs sont obligatoires.</p>
+
+    <form id="contactForm" novalidate>
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label for="firstname" class="form-label">Prénom</label>
+          <input type="text" id="firstname" name="firstname" class="form-control" required>
+          <div class="invalid-feedback">Prénom requis.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="lastname" class="form-label">Nom</label>
+          <input type="text" id="lastname" name="lastname" class="form-control" required>
+          <div class="invalid-feedback">Nom requis.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="email" class="form-label">E-mail</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+          <div class="invalid-feedback">Adresse e-mail valide requise.</div>
+        </div>
+
+        <div class="col-md-6">
+          <label for="subject" class="form-label">Objet</label>
+          <input type="text" id="subject" name="subject" class="form-control" required>
+          <div class="invalid-feedback">Objet requis.</div>
+        </div>
+
+        <div class="col-12">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" rows="6" class="form-control" required></textarea>
+          <div class="invalid-feedback">Message requis.</div>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-dark">Envoyer</button>
+          <button type="button" id="resetBtn" class="btn btn-outline-secondary ms-2">Réinitialiser</button>
+        </div>
+
+        <div class="col-12">
+          <div id="formAlert" role="alert" class="d-none alert"></div>
+        </div>
+      </div>
+    </form>
+
+    <div class="mt-4">
+      <h5>Coordonnées rapides</h5>
+      <p class="muted mb-0"><strong>Email :</strong> theo.fief@ecole-hexagone.com</p>
+      <p class="muted">Houdan, France — LinkedIn : Théo Fief</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container d-flex justify-content-between align-items-center">
+    <div>© <strong>Théo Fief</strong> — Tous droits réservés</div>
+    <div class="muted">Site demo — contenu modifiable</div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+/* ===== HERO IMAGE SCROLL ===== */
+(function(){
+  const heroImg = document.querySelector('.hero-img');
+  if (!heroImg) return;
+  const maxScroll = window.innerHeight * 0.8;
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY;
+    const progress = Math.min(scrollY / maxScroll, 1);
+    const scale = 1 + 0.25 * progress;
+    const translateY = -20 - 15 * progress;
+    heroImg.style.transform = `translateY(${translateY}%) scale(${scale})`;
+  }, { passive: true });
+})();
+
+/* ===== MEME IMAGE + CARDS ANIMATION ===== */
+(function() {
+  const memeImg = document.querySelector('.meme-img');
+  const cards = document.querySelectorAll('.cards-container .card');
+  const section = document.querySelector('.meme-section');
+  if (!section) return;
+
+  function computeSpacing() {
+    return Array.from(cards).map(card => card.offsetWidth / 2);
+  }
+  let spacing = computeSpacing();
+  window.addEventListener('resize', () => { spacing = computeSpacing(); });
+
+  window.addEventListener('scroll', () => {
+    const scrollY = window.scrollY + window.innerHeight * 0.5;
+    const sectionTop = section.offsetTop;
+    const progress = Math.min(Math.max((scrollY - sectionTop) / 500, 0), 1);
+
+    if (memeImg && window.getComputedStyle(memeImg).display !== 'none') {
+      const imgScale = 1 + 0.15 * (1 - progress);
+      const imgTranslateX = 40 * progress;
+      const imgRotate = -5 * progress;
+      memeImg.style.transform = `translateX(${imgTranslateX}px) rotate(${imgRotate}deg) scale(${imgScale})`;
+    }
+
+    cards.forEach((card, idx) => {
+      const startLeft = 300 + spacing.slice(0, idx).reduce((a,b)=>a+b,0);
+      const endLeft = 50 + idx * 150;
+      const startTop = 50 + idx*20;
+      const endTop = 20 + idx*10;
+      const startScale = 0.9 - idx*0.05;
+      const endScale = 1 - idx*0.05;
+
+      const left = startLeft + (endLeft - startLeft) * progress;
+      const top = startTop + (endTop - startTop) * progress;
+      const scale = startScale + (endScale - startScale) * progress;
+
+      if (window.innerWidth > 767) {
+        card.style.left = `${left}px`;
+        card.style.top = `${top}px`;
+        card.style.transform = `scale(${scale})`;
+      } else {
+        card.style.left = null;
+        card.style.top = null;
+        card.style.transform = null;
+      }
+    });
+  }, { passive: true });
+})();
+
+/* ===== SCROLL FADE-IN / SLIDE-UP ===== */
+(function(){
+  const scrollElements = document.querySelectorAll('.scroll-animate, .slide-up');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){ 
+        entry.target.classList.add('visible');
+      }
+    });
+  }, { threshold: 0.15 });
+  scrollElements.forEach(el => observer.observe(el));
+})();
+
+/* ===== CONTACT FORM ===== */
+(function() {
+  const form = document.getElementById('contactForm');
+  const alertBox = document.getElementById('formAlert');
+  const resetBtn = document.getElementById('resetBtn');
+
+  function validateEmail(email) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email); }
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const firstname = document.getElementById('firstname');
+    const lastname = document.getElementById('lastname');
+    const email = document.getElementById('email');
+    const subject = document.getElementById('subject');
+    const message = document.getElementById('message');
+
+    [firstname, lastname, email, subject, message].forEach(el => el.classList.remove('is-invalid'));
+    alertBox.classList.add('d-none'); alertBox.classList.remove('alert-success','alert-danger');
+
+    let valid = true;
+    if (!firstname.value.trim()) { firstname.classList.add('is-invalid'); valid = false; }
+    if (!lastname.value.trim()) { lastname.classList.add('is-invalid'); valid = false; }
+    if (!validateEmail(email.value.trim())) { email.classList.add('is-invalid'); valid = false; }
+    if (!subject.value.trim()) { subject.classList.add('is-invalid'); valid = false; }
+    if (!message.value.trim()) { message.classList.add('is-invalid'); valid = false; }
+
+    if (!valid) {
+      alertBox.textContent = "Merci de remplir correctement tous les champs.";
+      alertBox.classList.remove('d-none');
+      alertBox.classList.add('alert','alert-danger');
+      return;
+    }
+
+    alertBox.textContent = "Message prêt à être envoyé — (demo) : aucune requête backend n'est configurée.";
+    alertBox.classList.remove('d-none');
+    alertBox.classList.add('alert','alert-success');
+    form.reset();
+  });
+
+  resetBtn.addEventListener('click', () => {
+    form.reset();
+    form.querySelectorAll('.is-invalid').forEach(el => el.classList.remove('is-invalid'));
+    alertBox.classList.add('d-none');
+  });
+})();
+
+/* accessibility: show focus on tab */
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Tab') document.documentElement.classList.add('show-focus');
+});
+</script>
+</body>
+</html>
